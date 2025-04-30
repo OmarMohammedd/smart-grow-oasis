@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { Thermometer, Droplet, Sun, Water } from 'lucide-react';
+import { Thermometer, Droplet, Sun, Cloud } from 'lucide-react';
 
 interface SensorReadingProps {
   title: string;
@@ -92,7 +91,7 @@ const SensorData = () => {
           title="Water Tank Level"
           value={sensorData.waterLevel}
           unit="%"
-          icon={<Water className="h-4 w-4 text-blue-500" />}
+          icon={<Cloud className="h-4 w-4 text-blue-500" />}
           progress={sensorData.waterLevel}
           progressColor="bg-blue-500"
         />

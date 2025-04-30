@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Cloud, Thermometer, Droplet, Wind, CloudRain, Sun, CloudSun } from 'lucide-react';
+import { Cloud, Thermometer, Droplet, Wind, Sun, CloudSun } from 'lucide-react';
 
 const WeatherWidget = () => {
   const [weather, setWeather] = useState({
@@ -42,7 +41,7 @@ const WeatherWidget = () => {
       case 'Cloudy':
         return <Cloud className="h-12 w-12 text-gray-500" />;
       case 'Light Rain':
-        return <CloudRain className="h-12 w-12 text-water-dark" />;
+        return <Cloud className="h-12 w-12 text-water-dark" />;
       case 'Clear':
         return <Sun className="h-12 w-12 text-sun-dark" />;
       default:

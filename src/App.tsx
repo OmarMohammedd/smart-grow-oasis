@@ -10,7 +10,6 @@ import Dashboard from "./pages/Dashboard";
 import Diagnosis from "./pages/Diagnosis";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import { Check, Cloud } from "lucide-react";
 
 const queryClient = new QueryClient();
 
