@@ -10,7 +10,7 @@ import { Switch } from '@/components/ui/switch';
 import { Slider } from '@/components/ui/slider';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
-import { Water, Sun, CloudRain, Droplet, Plant, Lightbulb } from 'lucide-react';
+import { Cloud, Sun, Droplet, Leaf, Lightbulb } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Legend } from 'recharts';
 
 // Simulated historical data for charts
@@ -136,7 +136,7 @@ const Dashboard = () => {
                   </div>
                   <div className="mt-4 p-3 bg-blue-50 rounded-md">
                     <div className="flex items-center">
-                      <CloudRain className="h-5 w-5 text-blue-500 mr-2" />
+                      <Cloud className="h-5 w-5 text-blue-500 mr-2" />
                       <span className="text-sm text-blue-700">Weekly water usage: 175ml</span>
                     </div>
                   </div>
@@ -154,7 +154,7 @@ const Dashboard = () => {
                 <Tabs defaultValue="irrigation">
                   <TabsList className="grid w-full grid-cols-2">
                     <TabsTrigger value="irrigation">
-                      <Water className="h-4 w-4 mr-2" />
+                      <Cloud className="h-4 w-4 mr-2" />
                       Irrigation
                     </TabsTrigger>
                     <TabsTrigger value="lighting">
@@ -211,7 +211,7 @@ const Dashboard = () => {
                         size="sm" 
                         className="border-green-500 text-green-500 hover:bg-green-50"
                       >
-                        <Plant className="h-4 w-4 mr-2" />
+                        <Leaf className="h-4 w-4 mr-2" />
                         View Schedule
                       </Button>
                     </div>
@@ -266,7 +266,7 @@ const Dashboard = () => {
                         size="sm" 
                         className="border-green-500 text-green-500 hover:bg-green-50"
                       >
-                        <Plant className="h-4 w-4 mr-2" />
+                        <Leaf className="h-4 w-4 mr-2" />
                         Light Schedule
                       </Button>
                     </div>
@@ -301,7 +301,7 @@ const Dashboard = () => {
                           <p className="text-lg font-medium">4 / 4</p>
                         </div>
                         <div className="p-2 bg-blue-100 rounded-full">
-                          <Server className="h-4 w-4 text-blue-500" />
+                          <Cloud className="h-4 w-4 text-blue-500" />
                         </div>
                       </div>
                     </div>

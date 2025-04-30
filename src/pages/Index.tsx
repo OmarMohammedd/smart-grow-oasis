@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import FeatureCard from '@/components/FeatureCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Droplet, Thermometer, Plant, Sun, Water } from 'lucide-react';
+import { Droplet, Thermometer, Leaf, Sun, Cloud } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -75,7 +75,7 @@ const Index = () => {
             <FeatureCard
               title="Plant Health Analysis"
               description="AI-powered diagnosis identifies plant diseases and provides treatment recommendations by analyzing leaf photos."
-              icon={Plant}
+              icon={Leaf}
             />
             <FeatureCard
               title="Smart Lighting Control"
@@ -85,7 +85,7 @@ const Index = () => {
             <FeatureCard
               title="Water Tank Monitoring"
               description="Never run dry with real-time water level tracking and timely alerts when refilling is needed."
-              icon={Water}
+              icon={Cloud}
             />
             <FeatureCard
               title="Weather Integration"
@@ -119,23 +119,23 @@ const Index = () => {
                 <h3 className="text-2xl font-bold mb-4">Why Smart Garden?</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 mr-2 mt-1 flex-shrink-0" />
+                    <Leaf className="h-5 w-5 mr-2 mt-1 flex-shrink-0" />
                     <span>Reduce water usage by up to 40%</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 mr-2 mt-1 flex-shrink-0" />
+                    <Leaf className="h-5 w-5 mr-2 mt-1 flex-shrink-0" />
                     <span>Save time with automated maintenance</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 mr-2 mt-1 flex-shrink-0" />
+                    <Leaf className="h-5 w-5 mr-2 mt-1 flex-shrink-0" />
                     <span>Identify and treat plant issues early</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 mr-2 mt-1 flex-shrink-0" />
+                    <Leaf className="h-5 w-5 mr-2 mt-1 flex-shrink-0" />
                     <span>Optimize growing conditions year-round</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 mr-2 mt-1 flex-shrink-0" />
+                    <Leaf className="h-5 w-5 mr-2 mt-1 flex-shrink-0" />
                     <span>Easy installation and intuitive controls</span>
                   </li>
                 </ul>
