@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import FeatureCard from '@/components/FeatureCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Droplet, Thermometer, Leaf, Sun, Cloud } from 'lucide-react';
+import { Droplet, Thermometer, Leaf, Sun, Cloud, CloudSun } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -52,7 +52,7 @@ const Index = () => {
       </section>
       
       {/* Features Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" id="features">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold gradient-text mb-4">Key Features</h2>
@@ -66,32 +66,37 @@ const Index = () => {
               title="Automated Irrigation"
               description="Smart watering based on soil moisture levels ensures your plants get exactly what they need, when they need it."
               icon={Droplet}
+              data={{ current: "35%", optimal: "40%", status: "Normal" }}
             />
             <FeatureCard
               title="Real-time Monitoring"
               description="Track temperature, humidity, soil moisture, and light intensity from anywhere via our intuitive dashboard."
               icon={Thermometer}
+              data={{ temperature: "24°C", humidity: "65%", light: "720 lux" }}
             />
             <FeatureCard
               title="Plant Health Analysis"
               description="AI-powered diagnosis identifies plant diseases and provides treatment recommendations by analyzing leaf photos."
               icon={Leaf}
+              data={{ healthScore: "92%", lastScan: "Today", issues: "None" }}
             />
             <FeatureCard
               title="Smart Lighting Control"
               description="Schedule lighting or let the system automatically adjust based on ambient light conditions for optimal plant growth."
               icon={Sun}
+              data={{ schedule: "6am-8pm", intensity: "75%", mode: "Auto" }}
             />
             <FeatureCard
               title="Water Tank Monitoring"
               description="Never run dry with real-time water level tracking and timely alerts when refilling is needed."
-              icon={Cloud}
+              icon={Droplet}
+              data={{ level: "78%", capacity: "5L", refillAlert: "Off" }}
             />
             <FeatureCard
               title="Weather Integration"
               description="The system adjusts care routines based on current and forecasted weather conditions in your area."
-              icon={Cloud}
-              className="hidden lg:block"
+              icon={CloudSun}
+              data={{ forecast: "Sunny", temperature: "28°C", humidity: "45%" }}
             />
           </div>
         </div>
